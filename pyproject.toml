@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "musetalk-api"
+version = "0.1.0"
+description = "Python client for a MuseTalk-class lip sync API: real-time talking-head generation through a hosted endpoint"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "musetalk-dev"}]
+keywords = ["ai api", "fabric-1.0", "musetalk", "musetalk api", "musetalk python", "synexa"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://github.com/musetalk-dev/musetalk-api"
+Documentation = "https://musetalk-dev.github.io/musetalk-api/"
+"Hosted model" = "https://synexa.ai/explore/veed/fabric-1.0?utm_source=github&utm_medium=ugc&utm_campaign=musetalk-dev&utm_content=pyproject&utm_term=tier-a"
+
+[tool.setuptools.packages.find]
+include = ["musetalk_api*"]
